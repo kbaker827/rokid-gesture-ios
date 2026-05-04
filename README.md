@@ -1,5 +1,11 @@
 # Rokid Gesture HUD
 
+
+> **🔵 Connectivity Update — May 2025**
+> The glasses connection has been migrated from **raw TCP sockets** to
+> **Bluetooth via the Rokid AI glasses SDK** (`pod 'RokidSDK' ~> 1.10.2`).
+> No Wi-Fi port forwarding is needed. See **SDK Setup** below.
+
 Navigate menus on your Rokid AR glasses using hand gestures — iPhone camera detects your hand pose via Apple's Vision framework and sends navigation events to the glasses over TCP.
 
 ```
@@ -138,6 +144,7 @@ The Vision framework's `VNDetectHumanHandPoseRequest` gives 21 joint positions p
 | Xcode | 15.0+ |
 | Glasses | Rokid AR glasses on same Wi-Fi as iPhone |
 | Camera permission | Required — hand detection only, no images stored or sent |
+| CocoaPods | 1.15+ — run `pod install` after cloning |
 
 ---
 
