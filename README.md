@@ -69,7 +69,7 @@ The only thing left for each app is filling in the three credential constants (`
 
 ### 1. Install the iOS app
 
-Open `RokidGesture.xcodeproj` in Xcode 15+, select your iPhone, and run.  
+Open `RokidGesture.xcworkspace` in Xcode 15+ (after running `pod install`) 15+, select your iPhone, and run.  
 Grant camera permission when prompted.
 
 ### 2. Camera tab
@@ -163,7 +163,7 @@ The Vision framework's `VNDetectHumanHandPoseRequest` gives 21 joint positions p
 |-----------|-------------|
 | iPhone | iOS 17+, camera |
 | Xcode | 15.0+ |
-| Glasses | Rokid AR glasses on same Wi-Fi as iPhone |
+| Glasses | Rokid AI glasses (paired via Bluetooth — no Wi-Fi needed) |
 | Camera permission | Required — hand detection only, no images stored or sent |
 | CocoaPods | 1.15+ — run `pod install` after cloning |
 
